@@ -6,3 +6,51 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
+body{
+    background: url(https://cdn.writermag.com/2019/03/question-marks.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Work Sans', sans-serif;
+    color: rgba(244, 208, 63, 1);
+    word-spacing: 0.2rem;
+}
+
+header{
+    color: rgba(244, 208, 63, 1);
+    text-align: center; 
+    font-size: 26px;
+    font-weight: bold;
+    margin: 80px 0 50px 0;
+}
+
+.yellowbox{
+    border-radius: 15px 50px 30px;
+    background: rgba(244, 208,63, 0.6);
+    padding: 20px;
+    height: 350px;
+    max-width: 400px;
+    margin: 0 auto;
+    filter: alpha(opacity=60);  
+    color: black;  
+    display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+    
+}
+
+
+
+.button, .quiz-start, .retake{
+    font-size: 1rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	padding: 0.5rem;
+	margin: 0rem;
+	border:0;
+	color:#1d2f3a;
+	background-color: #F4B350; 
+}
+
+.button:hover{
+    background-color:#E8E8E8;
+}
