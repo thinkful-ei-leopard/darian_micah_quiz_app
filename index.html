@@ -4,55 +4,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Random Knowledge Quiz</title>
   <meta name='description' content='Quiz about random things.'>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
     type="text/css" />
   <link href="app.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header>Random Knowledge Quiz</header>
-  <main role='main'>
-  <section id='start-page' class='yellowbox'>
-  <div id='title'>
-   <h1> Test Your Knowledge!</h1> 
-   <h3>Test your knowledge on anything and everything in this fun quiz!<br>Click the button below to begin!</h3>
-  </div>
-  <br>
-  <button class='quiz-start'>Take the quiz!</button>  
-  </section> 
-  
-  <section id='question-page' class='hidden blackbox'>
-  <form id='random-form' method='get'>
-  <fieldset name='question-set'>
-  <div id='quiz-question' class='random-question'></div>
-  <div class='random-answers' role='radiogroup'></div>
-  <button id='submit-answer' class='button hidden disabled' type='submit' disabled>Correct?
-  </button>  
-  </fieldset>  
-  </form>
-  <button id='next-question' class='button hidden' type='submit'>Next</button>
-  <div id='feedbackcorrect' class='all-feedback hidden'>
-  <h3>Correct! You sure know your stuff!</h3>  
-  </div>
-  <div id='feedbackincorrect' class='hidden'><br>
-  <h3>Incorrect! Maybe next time</h3>
-  </div>
-  <div class='result-counter'></div>  
-  </section>
 
-  <section id='final-page' class='hidden blackbox'>
-  <h1>How did you do?</h1>
-  <div id='final-correct'><br></div>
-  <div>
-  <p class='repeat'>Click the button below to take the quiz again.</p></div>
-  <button id='retake' type='submit' class="retake">Take it again!</button>  
-  </section>
-  </main>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+<!--TOP OF PAGE-->
+    <h1>Random Knowledge Quiz</h1>
+
+    <div class = "start-quiz">
+      <p class = 'descrip'>Test your knowledge on random subjects by clicking the Start button below </p>
+      <button class='start-button'>START QUIZ</button>
+    </div>
+    
+    <!--QUESTIONS -->
+  
+    <div class = 'questions'>
+      <h2 class='question'></h2>
+      <p class= "score"> Score:  </p>
+      <ul class ="list">
+      </ul>
+      
+      <div class='submit'>
+        <button class="submit-button">Check Answer</button> 
+      </div>
+      <div class='next'>
+        <button class="next-button">Next</button> 
+      </div>
+      
+      <p class = 'question-number'></p>
+    </div>
+
+  <!--END OF QUIZ-->
+  
+    <div class = 'end-quiz'> 
+      <p class = 'end-score'></p>
+      <p class='comment'></p>
+      <button class="retake-button">RETAKE QUIZ</button>
+    </div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
