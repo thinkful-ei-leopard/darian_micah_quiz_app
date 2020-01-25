@@ -91,17 +91,30 @@ function displayQuestion(){
 }
 
 // Checks answer from the array to see if the one chosen is the one that is correct
-function checkAnswer(answer){
+function checkAnswer(answers){
   let listQuestion = myQuestions[current];
-  if(listQuestion.correct == answer){
+  if(listQuestion.correct == answers){
     score++;
     $('li.selected').addClass('correct');
   } else {
     $('li.selected').addClass('incorrect');
-    $('listQuestion.correct').addClass('correct');
   }
   $('.score').text('Current Score: '+score);
   current++;
+}
+
+function incorrectAnswer(correct) {
+  let listQuestion = myQuestion[current];
+  if(list.listQuestion.incorrect !== answer){
+    return $(listQuestion.correct).addClass('correct');
+  }
+
+}
+
+function showCorrectAnswer(answer) {
+  let listQuestion = myQuestions[current];
+  if (listQuestion.correct !== answer)
+    $('li.selected').addClass('correct');
 }
 
 //Display score
@@ -113,24 +126,3 @@ function displayScore(){
     $('.comment').text('GREAT JOB!');
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
